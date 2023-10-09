@@ -1,0 +1,27 @@
+{
+  "campaignId": 94762,
+  "customerId": "633",
+  "recipients": [
+    {
+      "recipientData": [
+        {
+          "label": "forename",
+          "value": "Chris"
+        },
+        {
+          "label": "zip",
+          "value": "48309"
+        },
+        {
+          "label": "street",
+          "value": "Baker Street"
+        },
+        {
+          "label": "city",
+          "value": "Dover"
+        }
+      ],
+      "recipientIdExt": null
+    }
+  ]
+}

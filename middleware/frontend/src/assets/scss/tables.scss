@@ -1,0 +1,41 @@
+@import 'colors';
+@import 'variables';
+
+.dataTables_wrapper {
+
+    .col-sm-12 {
+         overflow: auto;
+     }
+
+    table.table{
+
+         thead {
+             background: $table-header-bg;
+             color: $table-header-color;
+         }
+         th, td {
+            border: none;
+        }
+        p.error-exception-msg {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 500px;
+        }
+    }
+}
+
+@media( max-width: $small-view){
+    .dataTables_wrapper{
+        .mdb-datatable-filter.flex-row {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .col-sm-12 {
+             overflow: auto;
+             padding: 0;
+         }
+    }
+}

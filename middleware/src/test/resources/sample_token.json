@@ -1,0 +1,15 @@
+{
+  "sub": "paul",
+  "iss": "com.dpdhl.dialogmarketing",
+  "fullName": "Paul Watson",
+  "customerIds": [
+    "4"
+  ],
+  "exp": 1588272706,
+  "locale": "de",
+  "iat": 1588269106,
+  "userId": 2,
+  "authorities": [
+    "ROLE_PMP_ACCESS"
+  ]
+}

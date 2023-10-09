@@ -1,0 +1,173 @@
+@import 'variables';
+@import 'colors';
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url('../fonts/Lato/Lato-Thin.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-ThinItalic;
+    src: url('../fonts/Lato/Lato-ThinItalic.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url('../fonts/Lato/Lato-Light.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url('../fonts/Lato/Lato-LightItalic.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-RegularItalic;
+    src: url('../fonts/Lato/Lato-Italic.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-BoldItalic;
+    src: url('../fonts/Lato/Lato-BoldItalic.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url('../fonts/Lato/Lato-Black.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-BlackItalic;
+    src: url('../fonts/Lato/Lato-BlackItalic.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body{
+	font-family: 'Lato-Regular';
+	font-size: $default-font-size;
+	line-height: $default-line-height;
+	font-weight: $default-font-weight;
+	background: $background-color;
+	width: 100%;
+    height: 100%;
+	a {
+    	transition: $default-transition-time all ease;
+    	color: $primary;
+    	&:hover, &:focus {
+    		text-decoration: none;
+    		outline: none;
+    		box-shadow: none;
+    	}
+    }
+    button {
+    	transition: $default-transition-time all ease;
+    	&:hover, &:focus {
+    		text-decoration: none;
+    		outline: none;
+    		box-shadow: none;
+    	}
+    }
+    div#root {
+        height: 100%;
+        & > div{
+          height: 100%;
+          & > div.row{
+            height: 100%;
+          }
+        }
+    }
+}
+
+
+
+.row{
+ &.nm{
+    margin:0;
+ }
+ .main-content{
+     transition: $default-transition-time all ease;
+     width: calc( 100% -  #{$sidebar-width});
+
+     .content{
+        padding: 50px 30px 30px;
+     }
+ }
+ &.hideSideBar{
+     .main-content{
+         width: 100%;
+     }
+  }
+}
+
+.mt-200{
+    margin-top: $mt-200;
+}
+.header {
+    margin-bottom: 20px;
+}
+.pma-cards {
+    text-align: center;
+    margin-bottom: 50px;
+    .card-chart {
+        margin-bottom: 20px;
+    }
+}
+.nm.row.sideBarActive .main-content {
+    width: 100%;
+}
+@media( min-width: $small-view) and (max-width: $medium-view) {
+    .row{
+         .card {
+            margin-bottom: 15px;
+         }
+         .header.mt-200 {
+            margin-top: 100px;
+         }
+     }
+}
+@media( max-width: $small-view){
+.row{
+     .main-content{
+        width:100%;
+     }
+     .card {
+        margin-bottom: 15px;
+     }
+     .header{
+        &.mt-200 {
+            margin-top: 50px;
+        }
+        &.mt-35{
+            margin-top:35px;
+        }
+        h2{
+            font-size:1.35rem;
+        }
+     }
+
+ }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 94762,
+  "createdOn": "2020-05-05T10:36:51.509Z",
+  "changedOn": null,
+  "version": 1,
+  "campaignType": "LONG_TERM",
+  "campaignName": "Summer session 2026",
+  "stateId": 110,
+  "product": null,
+  "sendingReasonId": 10,
+  "actions": [
+    "EDIT"
+  ],
+  "requiredActions": [
+    "DEFINE_PRODUCT",
+    "DEFINE_SENDING_REASON",
+    "ESTIMATE_CAMPAIGN",
+    "DEFINE_MAILING_TEMPLATE",
+    "DEFINE_VARIABLES"
+  ],
+  "workflowType": "TRIGGER_COMPLETE",
+  "hasDummyName": false,
+  "campaignIdExt": "SummerSess2026",
+  "individualizationId": null,
+  "printingProcessId": null,
+  "deliveryProductId": null
+}

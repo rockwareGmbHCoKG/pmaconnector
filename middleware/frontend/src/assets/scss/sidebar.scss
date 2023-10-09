@@ -1,0 +1,174 @@
+@import 'variables';
+@import 'colors';
+
+//SIDEBAR
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+    min-width: $sidebar-width;
+    max-width: $sidebar-width;
+    background: $sidebar-background;
+    color: $sidebar-color;
+    transition: all $default-transition-time;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    .h6{
+    color: $white;
+    }
+    &.active{
+    margin-left: -($sidebar-width);
+    .custom-menu{
+            margin-right: -60px;
+      }
+    }
+    h1{
+    margin-bottom: 20px;
+    font-weight: $sidebar-header-font-weight;
+    .logo{
+        color: $white;
+    }
+    }
+    ul.components{
+    padding: 0;
+    }
+    ul{
+    li{
+        font-size: $menu-font-size;
+        > ul{
+            margin-left: 10px;
+            li{
+                font-size: $submenu-font-size;
+            }
+        }
+        a{
+            padding: 10px 0;
+            display: block;
+            color: $menu-color;
+            border-bottom: 1px solid $menu-border-bottom-color;
+            &:hover{
+                color: $menu-hover-color;
+            }
+        }
+        &.active{
+            > a{
+                background: transparent;
+                color: $menu-active-element-color;
+            }
+        }
+    }
+    }
+    .custom-menu{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        margin-right: -20px;
+        transition: all $default-transition-time;
+
+        .btn{
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            margin: 0;
+            border: none;
+            font-size: inherit;
+            line-height: 60px;
+            padding: 0;
+
+            i.fa.fa-bars {
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                line-height: 60px;
+                position: relative;
+                left: 0;
+                top: 0;
+                padding: 0;
+            }
+
+
+            &.btn-sidebar{
+                background: $collapse-btn-bg;
+                color: $sidebar-color;
+                &:hover, &:focus{
+                    background: $collapse-btn-bg-hover;
+                    color: $sidebar-color;
+                }
+            }
+        }
+    }
+    a[data-toggle="collapse"] {
+        position: relative;
+    }
+
+    .dropdown-toggle::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #sidebarCollapse{
+        span{
+             @media (max-width: $small-view){
+            display: none;
+            }
+        }
+    }
+
+    #content {
+      width: 100%;
+      padding: 0;
+      min-height: 100vh;
+      transition: all 0.3s;
+    }
+
+
+    .footer{
+        p{
+            color: rgba(255,255,255,.5);
+        }
+    }
+
+    .signout-btn {
+        background: #fff;
+        color: #016c7d;
+        width: 100%;
+        margin: 0;
+        font-size: 15px;
+        text-transform: capitalize;
+
+        i.fa {
+            margin-left: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:  $small-view){
+ #sidebar {
+    margin-left: -($sidebar-width);
+    position: absolute;
+    h1 {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    .custom-menu {
+        margin-right: -65px;
+        top: 10px;
+    }
+    &.active {
+      margin-left: 0;
+      width: 100%;
+      max-width: 100%;
+      .custom-menu {
+          margin-right: 10px;
+      }
+    }
+
+  }
+}

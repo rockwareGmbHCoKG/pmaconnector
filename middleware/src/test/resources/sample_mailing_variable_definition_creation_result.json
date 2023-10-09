@@ -1,0 +1,74 @@
+{
+  "elements": [
+    {
+      "id": 55072,
+      "createdOn": "2020-05-05T15:27:21.542Z",
+      "changedOn": null,
+      "version": 1,
+      "label": "forename",
+      "sortOrder": 0,
+      "dataType": {
+        "id": 10,
+        "label": "Text"
+      },
+      "addressVariableId": null,
+      "addressVariableMappingConfirmed": false,
+      "selected": false,
+      "x": null,
+      "y": null,
+      "font": null,
+      "fontColor": null,
+      "fontSize": null,
+      "spanHeight": null
+    },
+    {
+      "id": 55075,
+      "createdOn": "2020-05-05T15:27:21.543Z",
+      "changedOn": "2020-05-05T15:27:21.829Z",
+      "version": 2,
+      "label": "lastname",
+      "sortOrder": 0,
+      "dataType": {
+        "id": 10,
+        "label": "Text"
+      },
+      "addressVariableId": 5,
+      "addressVariableMappingConfirmed": false,
+      "selected": false,
+      "x": null,
+      "y": null,
+      "font": null,
+      "fontColor": null,
+      "fontSize": null,
+      "spanHeight": null
+    },
+    {
+      "id": 55076,
+      "createdOn": "2020-05-05T15:27:21.543Z",
+      "changedOn": "2020-05-05T15:27:21.826Z",
+      "version": 2,
+      "label": "zip",
+      "sortOrder": 0,
+      "dataType": {
+        "id": 80,
+        "label": "Postleitzahl"
+      },
+      "addressVariableId": 8,
+      "addressVariableMappingConfirmed": false,
+      "selected": false,
+      "x": null,
+      "y": null,
+      "font": null,
+      "fontColor": null,
+      "fontSize": null,
+      "spanHeight": null
+    }
+  ],
+  "page": {
+    "size": 8,
+    "totalElements": 8,
+    "totalPages": 1,
+    "number": 0
+  },
+  "links": []
+}

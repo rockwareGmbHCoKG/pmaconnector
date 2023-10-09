@@ -1,0 +1,28 @@
+//theme colors
+$theme-color1: #4E9CD2;
+$theme-color2: #4A285F;
+$theme-color3: #A4021E;
+$theme-color4: #72C6E3;
+$theme-color5: #016C7D;
+
+
+// body
+$background-color: #f8f9fd;
+
+$primary: #866ec7;
+$black: #000;
+$white: #fff;
+
+// Tables
+$table-header-bg:       $theme-color5 !default;
+$table-header-color:    $white !default;
+
+//Sidebar
+$sidebar-background: $theme-color1;
+$sidebar-color: $white;
+$menu-color: rgba(255,255,255,.8);
+$menu-hover-color: $white;
+$menu-border-bottom-color: rgba(255,255,255,.1);
+$menu-active-element-color: $white;
+$collapse-btn-bg:$theme-color2;
+$collapse-btn-bg-hover:$theme-color3;

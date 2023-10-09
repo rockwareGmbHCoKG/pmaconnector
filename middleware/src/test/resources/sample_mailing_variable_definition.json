@@ -1,0 +1,45 @@
+{
+  "customerId": "633",
+  "createVariableDefRequestRepList": [
+    {
+      "label": "forename",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "lastname",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "zip",
+      "sortOrder": 0,
+      "dataTypeId": 80
+    },
+    {
+      "label": "salutation",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "title",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "street",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "house_number",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    },
+    {
+      "label": "city",
+      "sortOrder": 0,
+      "dataTypeId": 10
+    }
+  ]
+}
